@@ -17,6 +17,7 @@ function postContactToGoogle() {
 
         $.ajax({
             url: "https://docs.google.com/forms/d/1k1k4cV1D6KkuKn43al-7bfmtV4OXKeUhTLKd0UsPWxE/formResponse",
+            data: { "entry_320945709": $('#entry_320945709').val(), "entry_277936889": $('#entry_277936889').val(), "entry_210081351": $('#entry_210081351').val(), "entry_1078280141": $('#entry_1078280141').val() },
             type: "POST",
             dataType: "xml",
             statusCode: {
